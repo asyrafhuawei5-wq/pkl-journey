@@ -1,0 +1,59 @@
+# ==========================================================
+# PKL Journey - aturan pengecualian Git
+# ==========================================================
+
+# --- Konfigurasi lokal dan rahasia ---
+/config/database.php
+/config/*.local.php
+/config/*.secret.php
+.env
+.env.*
+!.env.example
+
+# --- Dump database, backup, dan data siswa ---
+/database/*.sql
+!/database/schema.example.sql
+/database/*.sql.gz
+/database/*.sql.zip
+/database/backup/
+/database/backups/
+/database/*backup*
+/database/*.bak
+
+# --- File data/impor siswa ---
+/imports/
+/exports/
+/uploads/
+*.xlsx
+*.xls
+*.csv
+
+# --- Salinan lama aplikasi ---
+# Folder ini adalah salinan versi lama dan tidak dipakai oleh aplikasi utama.
+/pkl_journey/
+
+# --- Dependensi Composer ---
+/vendor/
+/composer.phar
+
+# --- Runtime, cache, dan log ---
+/storage/
+/cache/
+/tmp/
+*.log
+*.tmp
+*.cache
+
+# --- Berkas OS dan editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Arsip lokal ---
+*.zip
+*.rar
+*.7z
